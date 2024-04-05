@@ -5,3 +5,18 @@
     File: styles.css
 */
 
+body{
+    background-color: lightblue;
+}
+
+h2{
+    text-align: center;
+}
+
+.container{
+    margin: auto;
+    width: 30%;
+    background-color: #eeeeee;
+    padding: 25px;
+    border-radius: 15px;
+}

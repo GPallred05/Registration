@@ -13,6 +13,76 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+    <div class="container">
+        <form>
+            <Fieldset>
+                <legend>
+                    Personal Information
+                </legend>
+                <label for="fname">
+                    Name:
+                    <input autofocus type="text" name="fname" id="fname" required placeholder="First Name"/>
+                </label>
+                <label for="lname">
+                    Last Name:
+                    <input type="text" name="lname" id="lname" required placeholder="Last Name"/>
+                </label>
+                <label for="emial">
+                    Email:
+                    <input type="email" name="email" id="email" required placeholder="Email Address"/>
+                </label>
+            </Fieldset>
+
+            <Fieldset>
+                <legend>
+                    Reservation Request
+                </legend>
+                <input list="teachers"  placeholder="Select Teacher">
+                    <datalist id="teachers">
+                        <option value="Tiffany Ford">
+                        <option value="Kristen Markley">
+                        <option value="Jackson Lewis">
+                    </datalist>
+
+                <input list="month"  placeholder="Select Month">
+                    <datalist id="month">
+                        <option value="January">
+                        <option value="February">
+                        <option value="March">
+                        <option value="April">
+                        <option value="May">
+                        <option value="June">
+                        <option value="July">
+                        <option value="August">
+                        <option value="September">
+                        <option value="October">
+                        <option value="November">
+                        <option value="December">
+                    </datalist>
+
+                    <input type="number" placeholder="Day" min="1" max="31">
+            </Fieldset>
+
+            <Fieldset>
+                <legend>
+                    Classes You Would Like To Take Next Semester
+                </legend>
+                <label for="java">
+                    Java
+                    <input type="radio" id="java" name="java" value="java">
+                </label>
+            </Fieldset>
+
+            <Fieldset>
+                <legend>
+                    Additional Information
+                </legend>
+            </Fieldset>
+            <input class="submit" type="submit" value="Submit"/>
+        </form>
+
+
+    </div>
     
 </body>
 </html>
