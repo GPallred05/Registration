@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+    <h1>Advising Appointment</h1>
     <div class="container">
-        <form>
+        <h2>Advising Form</h2>
+        <form method="get" action="thankyou.html">
             <Fieldset>
                 <legend>
                     Personal Information
@@ -39,50 +41,60 @@
                 </legend>
                 <input list="teachers"  placeholder="Select Teacher">
                     <datalist id="teachers">
-                        <option value="Tiffany Ford">
-                        <option value="Kristen Markley">
-                        <option value="Jackson Lewis">
+                        <option value="Tiffany Ford"></option>
+                        <option value="Kristen Markley"></option>
+                        <option value="Jackson Lewis"></option>
                     </datalist>
 
                 <input list="month"  placeholder="Select Month">
                     <datalist id="month">
-                        <option value="January">
-                        <option value="February">
-                        <option value="March">
-                        <option value="April">
-                        <option value="May">
-                        <option value="June">
-                        <option value="July">
-                        <option value="August">
-                        <option value="September">
-                        <option value="October">
-                        <option value="November">
-                        <option value="December">
+                        <option value="January"></option>
+                        <option value="February"></option>
+                        <option value="March"></option>
+                        <option value="April"></option>
+                        <option value="May"></option>
+                        <option value="June"></option>
+                        <option value="July"></option>
+                        <option value="August"></option>
+                        <option value="September"></option>
+                        <option value="October"></option>
+                        <option value="November"></option>
+                        <option value="December"></option>
                     </datalist>
 
-                    <input type="number" placeholder="Day" min="1" max="31">
+                <input type="number" placeholder="Day" min="1" max="31">
+                <input type="radio" id="AM" name="Time" value="AM">
+                <label for="AM">AM</label>
+                <input type="radio" id="PM" name="Time" value="PM">
+                <label for="PM">PM</label>
+
             </Fieldset>
 
             <Fieldset>
                 <legend>
                     Classes You Would Like To Take Next Semester
                 </legend>
-                <label for="java">
-                    Java
-                    <input type="radio" id="java" name="java" value="java">
-                </label>
+                <input type="radio" id="Java" name="Java" value="Java">
+                <label for="Java">Java</label>
+                <input type="radio" id="C#" name="C#" value="C#">
+                <label for="C#">C#</label>
+                <input type="radio" id="Web Dev" name="Web Dev" value="Web Dev">
+                <label for="Web Dev">Web Dev</label>
+                <input type="radio" id="Database" name="Database" value="Database">
+                <label for="Database">Databse</label>
+                <input type="radio" id="System Analysis and Design" name="System Analysis and Design" value="System Analysis and Design">
+                <label for="System Analysis and Design">System Analysis and Design</label>
             </Fieldset>
 
             <Fieldset>
                 <legend>
                     Additional Information
                 </legend>
+                <textarea id="addInfo" placeholder="Additional Information"></textarea>
+                <label for="addInfo"></label>
             </Fieldset>
             <input class="submit" type="submit" value="Submit"/>
         </form>
-
-
     </div>
-    
 </body>
 </html>
